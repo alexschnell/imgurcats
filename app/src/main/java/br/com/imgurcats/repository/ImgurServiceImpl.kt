@@ -26,5 +26,3 @@ fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit {
 fun provideImgurApi(retrofit: Retrofit): ImgurApiService {
     return retrofit.create(ImgurApiService::class.java)
 }
-
-

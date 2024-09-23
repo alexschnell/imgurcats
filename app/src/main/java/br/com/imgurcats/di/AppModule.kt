@@ -10,6 +10,6 @@ import org.koin.dsl.module
 val appModule = module {
     single { provideOkHttpClient() }
     single { provideRetrofit(get()) }
-    single { provideImgurApi(get()) }
+    factory { provideImgurApi(get()) }
     viewModel { ImgurViewModel(get()) }
 }
